@@ -25,7 +25,7 @@ This example creates a full infrastructure with 2 workloads A and B in 2 VPCs sp
   ```
   pulumi config set aws:region ap-northeast-3
   ```
-3. Paste the __main__.py file to define the resources
+3. Paste the `__main__.py` file to define the resources
 4. Deploy the Pulumi stack
   ```
   pulumi up
