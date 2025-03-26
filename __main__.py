@@ -325,13 +325,14 @@ nat_gateway = aws.ec2.NatGateway(
 )
 
 # Network Firewall Rule Group
-#   Allow most traffic rule group
+# Allow most traffic rule group
 allow_most = aws.networkfirewall.RuleGroup(
     "allow-tcp-udp-http-https",
     capacity=200,
     type="STATEFUL",
     rule_group={
         "rules_source": {
+            # Add rules based on your preferences
             "rules_string": """
             drop tcp any any -> 9.9.9.9/32 any (msg: "Drop TCP traffic to 9.9.9.9"; sid:1001; rev:1;)
             drop icmp any any -> 9.9.9.9/32 any (msg: "Drop ICMP traffic to 9.9.9.9"; sid:1002; rev:1;)
