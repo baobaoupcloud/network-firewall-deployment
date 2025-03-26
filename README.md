@@ -18,18 +18,18 @@ This example creates a full infrastructure with 2 workloads A and B in 2 VPCs sp
 ## Deploy the app
 ### Step 1: Initialize the project:
 1. Create a new Pulumi stack:
-```
-pulumi stack init
-```
+  ```
+  pulumi stack init
+  ```
 2. Configure the AWS region to deploy into:
-```
-pulumi config set aws:region ap-northeast-3
-```
+  ```
+  pulumi config set aws:region ap-northeast-3
+  ```
 3. Paste the __main__.py file to define the resources
 4. Deploy the Pulumi stack
-```
-pulumi up
-```
+  ```
+  pulumi up
+  ```
 
 ### Step 2: Test the app
 1. Go to the ALB DNS name in the output
