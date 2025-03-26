@@ -9,11 +9,11 @@ This example creates a full infrastructure with 2 workloads A and B in 2 VPCs sp
 ![Architecture](./Network-firewall-Architecture.png)
 
 ## Prerequisites
-[1. Install Pulumi](https://www.pulumi.com/docs/iac/download-install/)
+1. [Install Pulumi](https://www.pulumi.com/docs/iac/download-install/)
 
-[2. Configure AWS Credentials](https://www.pulumi.com/registry/packages/aws/installation-configuration/)
+2. [Configure AWS Credentials](https://www.pulumi.com/registry/packages/aws/installation-configuration/)
 
-[3. Install Python](https://www.pulumi.com/docs/iac/languages-sdks/python/)
+3. [Install Python](https://www.pulumi.com/docs/iac/languages-sdks/python/)
 
 ## Deploy the app
 ### Step 1: Initialize the project:
@@ -21,12 +21,12 @@ This example creates a full infrastructure with 2 workloads A and B in 2 VPCs sp
 ```
 pulumi stack init
 ```
-3. Configure the AWS region to deploy into:
+2. Configure the AWS region to deploy into:
 ```
 pulumi config set aws:region ap-northeast-3
 ```
-5. Paste the __main__.py file to define the resources
-6. Deploy the Pulumi stack
+3. Paste the __main__.py file to define the resources
+4. Deploy the Pulumi stack
 ```
 pulumi up
 ```
