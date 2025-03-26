@@ -5,11 +5,13 @@ This example creates a full infrastructure with 2 workloads A and B in 2 VPCs sp
 - The Centralized Network Firewall deployment model consists of 3 central VPCs: Ingress, Egress and Inspection VPC.
 - Network Firewall is deployed in the Inspection VPC subnet as an endpoint to inspect the incoming and outgoing traffic.
 - Network connectivity between VPCs is accomplished via AWS Transit Gateway. The Transit Gateway maintains a central routing table that is used to route traffic from the spoke VPCs to the internet. We also need to maintain routes so that return traffic from the internet can be routed back to the correct spoke VPC.
-![Uploading image.png…]()
+![Architecture](./Network-firewall-Architecture.png)
 
 ## Prerequisites
 [1. Install Pulumi]([url](https://www.pulumi.com/docs/iac/download-install/))
+
 [2. Configure AWS Credentials]([url](https://www.pulumi.com/registry/packages/aws/installation-configuration/))
+
 [3. Install Python]([url](https://www.pulumi.com/docs/iac/languages-sdks/python/))
 
 ## Deploy the app
